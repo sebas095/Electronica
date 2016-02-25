@@ -1,0 +1,16 @@
+NET "clk" LOC = B8;
+
+NET "address[7]" LOC = R17; 
+NET "address[6]" LOC = N17; 
+NET "address[5]" LOC = L13;
+NET "address[4]" LOC = L14;
+NET "address[3]" LOC = K17;
+NET "address[2]" LOC = K18; 
+NET "address[1]" LOC = H18; 
+NET "address[0]" LOC = G18;
+
+NET "rgb_out[2]" LOC = R8;
+NET "rgb_out[1]" LOC = P6;
+NET "rgb_out[0]" LOC = U4;
+NET "hsync" LOC = T4;
+NET "vsync" LOC = U3;

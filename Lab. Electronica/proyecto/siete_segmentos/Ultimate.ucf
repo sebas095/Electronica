@@ -1,0 +1,14 @@
+NET "CLK" LOC = B8;
+NET "RESET" LOC = H13;
+NET "siete_seg[7]" LOC = L18;
+NET "siete_seg[6]" LOC = F18;
+NET "siete_seg[5]" LOC = D17;
+NET "siete_seg[4]" LOC = D16;
+NET "siete_seg[3]" LOC = G14;
+NET "siete_seg[2]" LOC = J17;
+NET "siete_seg[1]" LOC = H14;
+NET "siete_seg[0]" LOC = C17;
+NET "AN[0]" LOC = F17;
+NET "AN[1]" LOC = H17;
+NET "AN[2]" LOC = C18;
+NET "AN[3]" LOC = F15;

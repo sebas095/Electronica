@@ -1,0 +1,6 @@
+vhdl work "vga_sync.vhd"
+vhdl work "vga_rgb.vhd"
+vhdl work "posicionador.vhd"
+vhdl work "DivFreq.vhd"
+vhdl work "block_ram.vhd"
+vhdl work "proyecto.vhd"

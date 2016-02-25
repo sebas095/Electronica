@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="790" delta="old" >&quot;<arg fmt="%s" index="1">D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/block_ram.vhd</arg>&quot; line <arg fmt="%d" index="2">47</arg>: Index value(s) does not match array range, simulation mismatch.
+</msg>
+
+<msg type="warning" file="Xst" num="790" delta="old" >&quot;<arg fmt="%s" index="1">D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/block_ram.vhd</arg>&quot; line <arg fmt="%d" index="2">50</arg>: Index value(s) does not match array range, simulation mismatch.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">s_rpixel_y&lt;31:17&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">s_pixel_fix_x&lt;31:17&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="old" >&quot;<arg fmt="%s" index="1">D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/proyecto.vhd</arg>&quot; line <arg fmt="%d" index="2">96</arg>: The result of a <arg fmt="%d" index="3">32</arg>x<arg fmt="%d" index="4">10</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">32</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="warning" file="Xst" num="643" delta="old" >&quot;<arg fmt="%s" index="1">D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/proyecto.vhd</arg>&quot; line <arg fmt="%d" index="2">97</arg>: The result of a <arg fmt="%d" index="3">32</arg>x<arg fmt="%d" index="4">10</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">32</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">pixel_x_10</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">VGA_SYNC_INST</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">21 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pixel_x_11&gt; &lt;pixel_x_12&gt; &lt;pixel_x_13&gt; &lt;pixel_x_14&gt; &lt;pixel_x_15&gt; &lt;pixel_x_16&gt; &lt;pixel_x_17&gt; &lt;pixel_x_18&gt; &lt;pixel_x_19&gt; &lt;pixel_x_20&gt; &lt;pixel_x_21&gt; &lt;pixel_x_22&gt; &lt;pixel_x_23&gt; &lt;pixel_x_24&gt; &lt;pixel_x_25&gt; &lt;pixel_x_26&gt; &lt;pixel_x_27&gt; &lt;pixel_x_28&gt; &lt;pixel_x_29&gt; &lt;pixel_x_30&gt; &lt;pixel_x_31&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">pixel_y_10</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">VGA_SYNC_INST</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">21 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pixel_y_11&gt; &lt;pixel_y_12&gt; &lt;pixel_y_13&gt; &lt;pixel_y_14&gt; &lt;pixel_y_15&gt; &lt;pixel_y_16&gt; &lt;pixel_y_17&gt; &lt;pixel_y_18&gt; &lt;pixel_y_19&gt; &lt;pixel_y_20&gt; &lt;pixel_y_21&gt; &lt;pixel_y_22&gt; &lt;pixel_y_23&gt; &lt;pixel_y_24&gt; &lt;pixel_y_25&gt; &lt;pixel_y_26&gt; &lt;pixel_y_27&gt; &lt;pixel_y_28&gt; &lt;pixel_y_29&gt; &lt;pixel_y_30&gt; &lt;pixel_y_31&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">pixel_x_10</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">VGA_SYNC_INST</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">pixel_y_10</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">VGA_SYNC_INST</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">pixel_x_0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">VGA_SYNC_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">pixel_y_0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">VGA_SYNC_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="old" > FFs/Latches &lt;<arg fmt="%s" index="1">pixel_x</arg>&lt;<arg fmt="%d" index="2">31</arg>:<arg fmt="%d" index="3">10</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">vga_sync</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2404" delta="old" > FFs/Latches &lt;<arg fmt="%s" index="1">pixel_y</arg>&lt;<arg fmt="%d" index="2">31</arg>:<arg fmt="%d" index="3">10</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">vga_sync</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">Mram_RAM</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Mmult_s_pixel_read_address_mult00011</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">proyecto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Mmult_s_pixel_write_address_mult00011</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">proyecto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">VGA_SYNC_INST/pixel_y_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">proyecto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">VGA_SYNC_INST/pixel_x_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">proyecto</arg>&gt;.
+</msg>
+
+</messages>
+

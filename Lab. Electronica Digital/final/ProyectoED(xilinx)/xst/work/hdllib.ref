@@ -1,0 +1,12 @@
+EN proyecto NULL "D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/proyecto.vhd" sub00/vhpl08 1418157761
+EN vga_sync NULL "D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/vga_sync.vhd" sub00/vhpl02 1418157753
+EN divfreq NULL "D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/DivFreq.vhd" sub00/vhpl00 1418157751
+AR block_ram behavioral "D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/block_ram.vhd" sub00/vhpl07 1418157758
+AR vga_rgb behavioral "D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/vga_rgb.vhd" sub00/vhpl05 1418157756
+AR proyecto behavioral "D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/proyecto.vhd" sub00/vhpl09 1418157762
+EN posicionador NULL "D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/posicionador.vhd" sub00/vhpl10 1418157759
+EN block_ram NULL "D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/block_ram.vhd" sub00/vhpl06 1418157757
+AR posicionador behavioral "D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/posicionador.vhd" sub00/vhpl11 1418157760
+EN vga_rgb NULL "D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/vga_rgb.vhd" sub00/vhpl04 1418157755
+AR vga_sync behavioral "D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/vga_sync.vhd" sub00/vhpl03 1418157754
+AR divfreq divf "D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/DivFreq.vhd" sub00/vhpl01 1418157752

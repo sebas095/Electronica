@@ -1,0 +1,16 @@
+NET "clk" LOC = B8;
+
+NET "rx_serial" LOC = U6;
+
+NET "read_address[7]" LOC = R17;
+NET "read_address[6]" LOC = N17;
+NET "read_address[5]" LOC = L13;
+NET "read_address[4]" LOC = L14;
+NET "read_address[3]" LOC = K17;
+NET "read_address[2]" LOC = K18;
+NET "read_address[1]" LOC = H18;
+NET "read_address[0]" LOC = G18;
+
+NET "data_output[2]" LOC = K15;
+NET "data_output[1]" LOC = J15;
+NET "data_output[0]" LOC = J14;

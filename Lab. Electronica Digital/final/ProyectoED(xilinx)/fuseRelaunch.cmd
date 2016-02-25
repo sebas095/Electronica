@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/posicionador_tb_isim_beh.exe" -prj "D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/posicionador_tb_beh.prj" "work.posicionador_tb" 

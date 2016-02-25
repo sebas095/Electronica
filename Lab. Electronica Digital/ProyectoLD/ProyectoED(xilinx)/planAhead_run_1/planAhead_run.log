@@ -1,0 +1,67 @@
+
+****** PlanAhead v14.7
+  **** Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Common 17-86] Your PlanAhead license expires in -192 day(s)
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source {D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/pa.fromNetlist.tcl}
+# create_project -name ProyectoED -dir "D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/planAhead_run_2" -part xc3s500efg320-4
+create_project: Time (s): elapsed = 00:00:08 . Memory (MB): peak = 377.133 ; gain = 41.266
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/proyecto.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED} }
+# set_property target_constrs_file "proyecto.ucf" [current_fileset -constrset]
+Adding file 'D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/proyecto.ucf' to fileset 'constrs_1'
+# add_files [list {proyecto.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc3s500efg320-4
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design proyecto.ngc ...
+WARNING:NetListWriters:298 - No output is written to proyecto.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   POSICIONADOR_INST/Mcompar_pos_x_cmp_lt0000_lut<9 : 1> on block proyecto is
+   not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file proyecto.edif ...
+ngc2edif: Total memory usage is 80032 kilobytes
+
+Parsing EDIF File [./planAhead_run_2/ProyectoED.data/cache/proyecto_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_2/ProyectoED.data/cache/proyecto_ngc_zx.edif]
+INFO: [Designutils 20-910] Reading macro library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn
+Parsing EDIF File [C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Finished Parsing EDIF File [C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+WARNING: [Netlist 29-43] Netlist 'proyecto' is not ideal for floorplanning, since the cellview 'proyecto' defined in file 'proyecto.ngc' contains large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+Loading clock regions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/ClockBuffers.xml
+Loading package from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/fg320/Package.xml
+Loading io standards from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/fg320/SSORules.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/drc.xml
+INFO: [Timing 38-77] Reading timing library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+INFO: [Timing 38-34] Done reading timing library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+Parsing UCF File [D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/proyecto.ucf]
+Finished Parsing UCF File [D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/proyecto.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: eb79255e
+link_design: Time (s): elapsed = 00:00:18 . Memory (MB): peak = 439.508 ; gain = 58.203
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Tue Dec 09 15:42:03 2014...
+INFO: [Common 17-83] Releasing license: PlanAhead

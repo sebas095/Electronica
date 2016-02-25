@@ -1,0 +1,756 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.23 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.23 secs
+ 
+--> Reading design: proyecto.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "proyecto.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "proyecto"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : proyecto
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/DivFreq.vhd" in Library work.
+Architecture divf of Entity divfreq is up to date.
+Compiling vhdl file "D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/vga_sync.vhd" in Library work.
+Architecture behavioral of Entity vga_sync is up to date.
+Compiling vhdl file "D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/vga_rgb.vhd" in Library work.
+Architecture behavioral of Entity vga_rgb is up to date.
+Compiling vhdl file "D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/block_ram.vhd" in Library work.
+Architecture behavioral of Entity block_ram is up to date.
+Compiling vhdl file "D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/posicionador.vhd" in Library work.
+Architecture behavioral of Entity posicionador is up to date.
+Compiling vhdl file "D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/proyecto.vhd" in Library work.
+Architecture behavioral of Entity proyecto is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <proyecto> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <DivFreq> in library <work> (architecture <divf>).
+
+Analyzing hierarchy for entity <vga_sync> in library <work> (architecture <behavioral>) with generics.
+	h_bp = 48
+	h_fp = 16
+	h_pixels = 640
+	h_pol = '0'
+	h_pulse = 96
+	v_bp = 33
+	v_fp = 10
+	v_pixels = 480
+	v_pol = '0'
+	v_pulse = 2
+
+Analyzing hierarchy for entity <vga_rgb> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <block_ram> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <posicionador> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <proyecto> in library <work> (Architecture <behavioral>).
+Entity <proyecto> analyzed. Unit <proyecto> generated.
+
+Analyzing Entity <DivFreq> in library <work> (Architecture <divf>).
+Entity <DivFreq> analyzed. Unit <DivFreq> generated.
+
+Analyzing generic Entity <vga_sync> in library <work> (Architecture <behavioral>).
+	h_bp = 48
+	h_fp = 16
+	h_pixels = 640
+	h_pol = '0'
+	h_pulse = 96
+	v_bp = 33
+	v_fp = 10
+	v_pixels = 480
+	v_pol = '0'
+	v_pulse = 2
+Entity <vga_sync> analyzed. Unit <vga_sync> generated.
+
+Analyzing Entity <vga_rgb> in library <work> (Architecture <behavioral>).
+Entity <vga_rgb> analyzed. Unit <vga_rgb> generated.
+
+Analyzing Entity <block_ram> in library <work> (Architecture <behavioral>).
+WARNING:Xst:790 - "D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/block_ram.vhd" line 47: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/block_ram.vhd" line 50: Index value(s) does not match array range, simulation mismatch.
+Entity <block_ram> analyzed. Unit <block_ram> generated.
+
+Analyzing Entity <posicionador> in library <work> (Architecture <behavioral>).
+Entity <posicionador> analyzed. Unit <posicionador> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <DivFreq>.
+    Related source file is "D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/DivFreq.vhd".
+    Found 1-bit register for signal <clkout>.
+    Found 2-bit up counter for signal <tmp>.
+    Found 3-bit comparator greater for signal <tmp$cmp_gt0000> created at line 18.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <DivFreq> synthesized.
+
+
+Synthesizing Unit <vga_sync>.
+    Related source file is "D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/vga_sync.vhd".
+    Found 32-bit register for signal <pixel_x>.
+    Found 32-bit register for signal <pixel_y>.
+    Found 1-bit register for signal <vsync>.
+    Found 1-bit register for signal <disp_ena>.
+    Found 1-bit register for signal <hsync>.
+    Found 10-bit register for signal <h_count>.
+    Found 10-bit adder for signal <h_count$addsub0000> created at line 48.
+    Found 10-bit comparator less for signal <h_count$cmp_lt0000> created at line 47.
+    Found 10-bit comparator greater for signal <hsync$cmp_gt0000> created at line 59.
+    Found 10-bit comparator less for signal <hsync$cmp_lt0000> created at line 59.
+    Found 10-bit comparator less for signal <pixel_x$cmp_lt0000> created at line 73.
+    Found 10-bit comparator less for signal <pixel_y$cmp_lt0000> created at line 76.
+    Found 10-bit register for signal <v_count>.
+    Found 10-bit adder for signal <v_count$addsub0000> created at line 52.
+    Found 10-bit comparator less for signal <v_count$cmp_lt0001> created at line 51.
+    Found 10-bit comparator greater for signal <vsync$cmp_gt0000> created at line 66.
+    Found 10-bit comparator less for signal <vsync$cmp_lt0000> created at line 66.
+    Summary:
+	inferred  87 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   8 Comparator(s).
+Unit <vga_sync> synthesized.
+
+
+Synthesizing Unit <vga_rgb>.
+    Related source file is "D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/vga_rgb.vhd".
+Unit <vga_rgb> synthesized.
+
+
+Synthesizing Unit <block_ram>.
+    Related source file is "D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/block_ram.vhd".
+    Found 76800x3-bit dual-port RAM <Mram_RAM> for signal <RAM>.
+    Found 3-bit register for signal <data_output>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   3 D-type flip-flop(s).
+Unit <block_ram> synthesized.
+
+
+Synthesizing Unit <posicionador>.
+    Related source file is "D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/posicionador.vhd".
+    Found 1-bit register for signal <btn_down_state<0>>.
+    Found 1-bit register for signal <btn_left_state<0>>.
+    Found 1-bit register for signal <btn_right_state<0>>.
+    Found 1-bit register for signal <btn_up_state<0>>.
+    Found 32-bit down counter for signal <pos_x>.
+    Found 32-bit adder for signal <pos_x$add0000> created at line 84.
+    Found 32-bit comparator greatequal for signal <pos_x$cmp_ge0000> created at line 84.
+    Found 32-bit comparator less for signal <pos_x$cmp_lt0000> created at line 84.
+    Found 32-bit comparator less for signal <pos_x$cmp_lt0001> created at line 68.
+    Found 32-bit 4-to-1 multiplexer for signal <pos_x$mux0000> created at line 83.
+    Found 32-bit subtractor for signal <pos_x$sub0000> created at line 68.
+    Found 32-bit up counter for signal <pos_y>.
+    Found 32-bit adder for signal <pos_y$add0000> created at line 36.
+    Found 32-bit comparator greatequal for signal <pos_y$cmp_ge0000> created at line 52.
+    Found 32-bit comparator greatequal for signal <pos_y$cmp_ge0001> created at line 36.
+    Found 32-bit comparator less for signal <pos_y$cmp_lt0000> created at line 52.
+    Found 32-bit 4-to-1 multiplexer for signal <pos_y$mux0000> created at line 51.
+    Found 32-bit subtractor for signal <pos_y$sub0000> created at line 52.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   4 D-type flip-flop(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred   6 Comparator(s).
+	inferred  64 Multiplexer(s).
+Unit <posicionador> synthesized.
+
+
+Synthesizing Unit <proyecto>.
+    Related source file is "D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/proyecto.vhd".
+WARNING:Xst:646 - Signal <s_rpixel_y<31:17>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <s_pixel_fix_x<31:17>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:643 - "D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/proyecto.vhd" line 96: The result of a 32x10-bit multiplication is partially used. Only the 32 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:643 - "D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/proyecto.vhd" line 97: The result of a 32x10-bit multiplication is partially used. Only the 32 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+    Found 32-bit adder for signal <s_pixel_fix_x$add0000>.
+    Found 32-bit adder for signal <s_pixel_fix_x$addsub0000>.
+    Found 32-bit adder for signal <s_pixel_fix_y$add0000>.
+    Found 32-bit adder for signal <s_pixel_fix_y$addsub0000>.
+    Found 17-bit adder for signal <s_pixel_read_address>.
+    Found 32x10-bit multiplier for signal <s_pixel_read_address$mult0001> created at line 96.
+    Found 17-bit adder for signal <s_pixel_write_address>.
+    Found 32x10-bit multiplier for signal <s_pixel_write_address$mult0001> created at line 97.
+    Summary:
+	inferred   6 Adder/Subtractor(s).
+	inferred   2 Multiplier(s).
+Unit <proyecto> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 76800x3-bit dual-port RAM                             : 1
+# Multipliers                                          : 2
+ 32x10-bit multiplier                                  : 2
+# Adders/Subtractors                                   : 12
+ 10-bit adder                                          : 2
+ 17-bit adder                                          : 2
+ 32-bit adder                                          : 6
+ 32-bit subtractor                                     : 2
+# Counters                                             : 3
+ 2-bit up counter                                      : 1
+ 32-bit down counter                                   : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 13
+ 1-bit register                                        : 8
+ 10-bit register                                       : 2
+ 3-bit register                                        : 1
+ 32-bit register                                       : 2
+# Comparators                                          : 15
+ 10-bit comparator greater                             : 2
+ 10-bit comparator less                                : 6
+ 3-bit comparator greater                              : 1
+ 32-bit comparator greatequal                          : 3
+ 32-bit comparator less                                : 3
+# Multiplexers                                         : 2
+ 32-bit 4-to-1 multiplexer                             : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <pixel_x_10> in Unit <VGA_SYNC_INST> is equivalent to the following 21 FFs/Latches, which will be removed : <pixel_x_11> <pixel_x_12> <pixel_x_13> <pixel_x_14> <pixel_x_15> <pixel_x_16> <pixel_x_17> <pixel_x_18> <pixel_x_19> <pixel_x_20> <pixel_x_21> <pixel_x_22> <pixel_x_23> <pixel_x_24> <pixel_x_25> <pixel_x_26> <pixel_x_27> <pixel_x_28> <pixel_x_29> <pixel_x_30> <pixel_x_31> 
+INFO:Xst:2261 - The FF/Latch <pixel_y_10> in Unit <VGA_SYNC_INST> is equivalent to the following 21 FFs/Latches, which will be removed : <pixel_y_11> <pixel_y_12> <pixel_y_13> <pixel_y_14> <pixel_y_15> <pixel_y_16> <pixel_y_17> <pixel_y_18> <pixel_y_19> <pixel_y_20> <pixel_y_21> <pixel_y_22> <pixel_y_23> <pixel_y_24> <pixel_y_25> <pixel_y_26> <pixel_y_27> <pixel_y_28> <pixel_y_29> <pixel_y_30> <pixel_y_31> 
+WARNING:Xst:1710 - FF/Latch <pixel_x_10> (without init value) has a constant value of 0 in block <VGA_SYNC_INST>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <pixel_y_10> (without init value) has a constant value of 0 in block <VGA_SYNC_INST>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <pixel_x_0> is unconnected in block <VGA_SYNC_INST>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <pixel_y_0> is unconnected in block <VGA_SYNC_INST>.
+WARNING:Xst:2404 -  FFs/Latches <pixel_x<31:10>> (without init value) have a constant value of 0 in block <vga_sync>.
+WARNING:Xst:2404 -  FFs/Latches <pixel_y<31:10>> (without init value) have a constant value of 0 in block <vga_sync>.
+
+Synthesizing (advanced) Unit <block_ram>.
+INFO:Xst:3226 - The RAM <Mram_RAM> will be implemented as a BLOCK RAM, absorbing the following register(s): <data_output>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 76800-word x 3-bit                  |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <write_enable>  | high     |
+    |     addrA          | connected to signal <write_address> |          |
+    |     diA            | connected to signal <data_input>    |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 76800-word x 3-bit                  |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <clk>           | rise     |
+    |     addrB          | connected to signal <read_address>  |          |
+    |     doB            | connected to signal <data_output>   |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <block_ram> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 76800x3-bit dual-port block RAM                       : 1
+# Multipliers                                          : 2
+ 32x10-bit multiplier                                  : 2
+# Adders/Subtractors                                   : 12
+ 10-bit adder                                          : 2
+ 17-bit adder                                          : 3
+ 18-bit adder                                          : 1
+ 32-bit adder                                          : 4
+ 32-bit subtractor                                     : 2
+# Counters                                             : 3
+ 2-bit up counter                                      : 1
+ 32-bit down counter                                   : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 48
+ Flip-Flops                                            : 48
+# Comparators                                          : 15
+ 10-bit comparator greater                             : 2
+ 10-bit comparator less                                : 6
+ 3-bit comparator greater                              : 1
+ 32-bit comparator greatequal                          : 3
+ 32-bit comparator less                                : 3
+# Multiplexers                                         : 2
+ 32-bit 4-to-1 multiplexer                             : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <Mmult_s_pixel_read_address_mult00011> of sequential type is unconnected in block <proyecto>.
+WARNING:Xst:2677 - Node <Mmult_s_pixel_write_address_mult00011> of sequential type is unconnected in block <proyecto>.
+
+Optimizing unit <proyecto> ...
+
+Optimizing unit <vga_sync> ...
+
+Optimizing unit <posicionador> ...
+WARNING:Xst:2677 - Node <VGA_SYNC_INST/pixel_y_0> of sequential type is unconnected in block <proyecto>.
+WARNING:Xst:2677 - Node <VGA_SYNC_INST/pixel_x_0> of sequential type is unconnected in block <proyecto>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block proyecto, actual ratio is 4.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 115
+ Flip-Flops                                            : 115
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : proyecto.ngr
+Top Level Output File Name         : proyecto
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 14
+
+Cell Usage :
+# BELS                             : 930
+#      GND                         : 1
+#      INV                         : 75
+#      LUT1                        : 91
+#      LUT2                        : 45
+#      LUT2_L                      : 2
+#      LUT3                        : 94
+#      LUT3_D                      : 1
+#      LUT3_L                      : 4
+#      LUT4                        : 110
+#      LUT4_D                      : 2
+#      MUXCY                       : 254
+#      MUXF5                       : 4
+#      VCC                         : 1
+#      XORCY                       : 246
+# FlipFlops/Latches                : 115
+#      FD                          : 23
+#      FDE                         : 86
+#      FDR                         : 6
+# RAMS                             : 15
+#      RAMB16_S1_S1                : 15
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 13
+#      IBUF                        : 8
+#      OBUF                        : 5
+# MULTs                            : 2
+#      MULT18X18SIO                : 2
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      224  out of   4656     4%  
+ Number of Slice Flip Flops:            115  out of   9312     1%  
+ Number of 4 input LUTs:                424  out of   9312     4%  
+ Number of IOs:                          14
+ Number of bonded IOBs:                  14  out of    232     6%  
+ Number of BRAMs:                        15  out of     20    75%  
+ Number of MULT18X18SIOs:                 2  out of     20    10%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 89    |
+VGA_FREQDIV_INST/clkout1           | BUFG                   | 41    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 12.530ns (Maximum Frequency: 79.811MHz)
+   Minimum input arrival time before clock: 7.865ns
+   Maximum output required time after clock: 9.144ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 12.530ns (frequency: 79.811MHz)
+  Total number of paths / destination ports: 375719 / 366
+-------------------------------------------------------------------------
+Delay:               12.530ns (Levels of Logic = 66)
+  Source:            POSICIONADOR_INST/pos_x_1 (FF)
+  Destination:       POSICIONADOR_INST/pos_x_31 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: POSICIONADOR_INST/pos_x_1 to POSICIONADOR_INST/pos_x_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              5   0.591   0.808  POSICIONADOR_INST/pos_x_1 (POSICIONADOR_INST/pos_x_1)
+     LUT1:I0->O            1   0.704   0.000  POSICIONADOR_INST/Madd_pos_x_add0000_cy<1>_rt (POSICIONADOR_INST/Madd_pos_x_add0000_cy<1>_rt)
+     MUXCY:S->O            1   0.464   0.000  POSICIONADOR_INST/Madd_pos_x_add0000_cy<1> (POSICIONADOR_INST/Madd_pos_x_add0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Madd_pos_x_add0000_cy<2> (POSICIONADOR_INST/Madd_pos_x_add0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Madd_pos_x_add0000_cy<3> (POSICIONADOR_INST/Madd_pos_x_add0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Madd_pos_x_add0000_cy<4> (POSICIONADOR_INST/Madd_pos_x_add0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Madd_pos_x_add0000_cy<5> (POSICIONADOR_INST/Madd_pos_x_add0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Madd_pos_x_add0000_cy<6> (POSICIONADOR_INST/Madd_pos_x_add0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Madd_pos_x_add0000_cy<7> (POSICIONADOR_INST/Madd_pos_x_add0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Madd_pos_x_add0000_cy<8> (POSICIONADOR_INST/Madd_pos_x_add0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Madd_pos_x_add0000_cy<9> (POSICIONADOR_INST/Madd_pos_x_add0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Madd_pos_x_add0000_cy<10> (POSICIONADOR_INST/Madd_pos_x_add0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Madd_pos_x_add0000_cy<11> (POSICIONADOR_INST/Madd_pos_x_add0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Madd_pos_x_add0000_cy<12> (POSICIONADOR_INST/Madd_pos_x_add0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Madd_pos_x_add0000_cy<13> (POSICIONADOR_INST/Madd_pos_x_add0000_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Madd_pos_x_add0000_cy<14> (POSICIONADOR_INST/Madd_pos_x_add0000_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Madd_pos_x_add0000_cy<15> (POSICIONADOR_INST/Madd_pos_x_add0000_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Madd_pos_x_add0000_cy<16> (POSICIONADOR_INST/Madd_pos_x_add0000_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Madd_pos_x_add0000_cy<17> (POSICIONADOR_INST/Madd_pos_x_add0000_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Madd_pos_x_add0000_cy<18> (POSICIONADOR_INST/Madd_pos_x_add0000_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Madd_pos_x_add0000_cy<19> (POSICIONADOR_INST/Madd_pos_x_add0000_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Madd_pos_x_add0000_cy<20> (POSICIONADOR_INST/Madd_pos_x_add0000_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Madd_pos_x_add0000_cy<21> (POSICIONADOR_INST/Madd_pos_x_add0000_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Madd_pos_x_add0000_cy<22> (POSICIONADOR_INST/Madd_pos_x_add0000_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Madd_pos_x_add0000_cy<23> (POSICIONADOR_INST/Madd_pos_x_add0000_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Madd_pos_x_add0000_cy<24> (POSICIONADOR_INST/Madd_pos_x_add0000_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Madd_pos_x_add0000_cy<25> (POSICIONADOR_INST/Madd_pos_x_add0000_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Madd_pos_x_add0000_cy<26> (POSICIONADOR_INST/Madd_pos_x_add0000_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Madd_pos_x_add0000_cy<27> (POSICIONADOR_INST/Madd_pos_x_add0000_cy<27>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Madd_pos_x_add0000_cy<28> (POSICIONADOR_INST/Madd_pos_x_add0000_cy<28>)
+     XORCY:CI->O           2   0.804   0.622  POSICIONADOR_INST/Madd_pos_x_add0000_xor<29> (POSICIONADOR_INST/pos_x_add0000<29>)
+     LUT2:I0->O            1   0.704   0.000  POSICIONADOR_INST/Mcompar_pos_x_cmp_lt0000_lut<8> (POSICIONADOR_INST/Mcompar_pos_x_cmp_lt0000_lut<8>)
+     MUXCY:S->O            1   0.464   0.000  POSICIONADOR_INST/Mcompar_pos_x_cmp_lt0000_cy<8> (POSICIONADOR_INST/Mcompar_pos_x_cmp_lt0000_cy<8>)
+     MUXCY:CI->O          33   0.459   1.267  POSICIONADOR_INST/Mcompar_pos_x_cmp_lt0000_cy<9> (POSICIONADOR_INST/Mcompar_pos_x_cmp_lt0000_cy<9>)
+     LUT4:I3->O            1   0.704   0.000  POSICIONADOR_INST/Mcount_pos_x_lut<0> (POSICIONADOR_INST/Mcount_pos_x_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  POSICIONADOR_INST/Mcount_pos_x_cy<0> (POSICIONADOR_INST/Mcount_pos_x_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_x_cy<1> (POSICIONADOR_INST/Mcount_pos_x_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_x_cy<2> (POSICIONADOR_INST/Mcount_pos_x_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_x_cy<3> (POSICIONADOR_INST/Mcount_pos_x_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_x_cy<4> (POSICIONADOR_INST/Mcount_pos_x_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_x_cy<5> (POSICIONADOR_INST/Mcount_pos_x_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_x_cy<6> (POSICIONADOR_INST/Mcount_pos_x_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_x_cy<7> (POSICIONADOR_INST/Mcount_pos_x_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_x_cy<8> (POSICIONADOR_INST/Mcount_pos_x_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_x_cy<9> (POSICIONADOR_INST/Mcount_pos_x_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_x_cy<10> (POSICIONADOR_INST/Mcount_pos_x_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_x_cy<11> (POSICIONADOR_INST/Mcount_pos_x_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_x_cy<12> (POSICIONADOR_INST/Mcount_pos_x_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_x_cy<13> (POSICIONADOR_INST/Mcount_pos_x_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_x_cy<14> (POSICIONADOR_INST/Mcount_pos_x_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_x_cy<15> (POSICIONADOR_INST/Mcount_pos_x_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_x_cy<16> (POSICIONADOR_INST/Mcount_pos_x_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_x_cy<17> (POSICIONADOR_INST/Mcount_pos_x_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_x_cy<18> (POSICIONADOR_INST/Mcount_pos_x_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_x_cy<19> (POSICIONADOR_INST/Mcount_pos_x_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_x_cy<20> (POSICIONADOR_INST/Mcount_pos_x_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_x_cy<21> (POSICIONADOR_INST/Mcount_pos_x_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_x_cy<22> (POSICIONADOR_INST/Mcount_pos_x_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_x_cy<23> (POSICIONADOR_INST/Mcount_pos_x_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_x_cy<24> (POSICIONADOR_INST/Mcount_pos_x_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_x_cy<25> (POSICIONADOR_INST/Mcount_pos_x_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_x_cy<26> (POSICIONADOR_INST/Mcount_pos_x_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_x_cy<27> (POSICIONADOR_INST/Mcount_pos_x_cy<27>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_x_cy<28> (POSICIONADOR_INST/Mcount_pos_x_cy<28>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_x_cy<29> (POSICIONADOR_INST/Mcount_pos_x_cy<29>)
+     MUXCY:CI->O           0   0.059   0.000  POSICIONADOR_INST/Mcount_pos_x_cy<30> (POSICIONADOR_INST/Mcount_pos_x_cy<30>)
+     XORCY:CI->O           1   0.804   0.000  POSICIONADOR_INST/Mcount_pos_x_xor<31> (POSICIONADOR_INST/Mcount_pos_x31)
+     FDE:D                     0.308          POSICIONADOR_INST/pos_x_31
+    ----------------------------------------
+    Total                     12.530ns (9.833ns logic, 2.697ns route)
+                                       (78.5% logic, 21.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'VGA_FREQDIV_INST/clkout1'
+  Clock period: 11.681ns (frequency: 85.609MHz)
+  Total number of paths / destination ports: 3991 / 59
+-------------------------------------------------------------------------
+Delay:               11.681ns (Levels of Logic = 8)
+  Source:            VGA_SYNC_INST/h_count_0 (FF)
+  Destination:       VGA_SYNC_INST/disp_ena (FF)
+  Source Clock:      VGA_FREQDIV_INST/clkout1 rising
+  Destination Clock: VGA_FREQDIV_INST/clkout1 rising
+
+  Data Path: VGA_SYNC_INST/h_count_0 to VGA_SYNC_INST/disp_ena
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.591   0.622  VGA_SYNC_INST/h_count_0 (VGA_SYNC_INST/h_count_0)
+     LUT2_L:I0->LO         1   0.704   0.104  VGA_SYNC_INST/h_count_cmp_lt0000216 (VGA_SYNC_INST/h_count_cmp_lt0000216)
+     LUT4:I3->O            2   0.704   0.451  VGA_SYNC_INST/h_count_cmp_lt0000221 (VGA_SYNC_INST/h_count_cmp_lt0000221)
+     LUT4:I3->O            1   0.704   0.424  VGA_SYNC_INST/h_count_cmp_lt0000246_1 (VGA_SYNC_INST/h_count_cmp_lt0000246)
+     LUT4_D:I3->O          9   0.704   0.824  VGA_SYNC_INST/v_count_mux0001<0>150 (VGA_SYNC_INST/N01)
+     LUT4:I3->O            5   0.704   0.712  VGA_SYNC_INST/v_count_mux0001<5>1 (VGA_SYNC_INST/v_count_mux0001<5>)
+     LUT2_L:I1->LO         1   0.704   0.104  VGA_SYNC_INST/pixel_y_cmp_lt00001_SW0 (N31)
+     LUT4:I3->O           10   0.704   0.886  VGA_SYNC_INST/pixel_y_cmp_lt00001 (VGA_SYNC_INST/pixel_y_cmp_lt0000)
+     LUT4:I3->O            1   0.704   0.420  VGA_SYNC_INST/disp_ena_not00011 (VGA_SYNC_INST/disp_ena_not0001)
+     FDR:R                     0.911          VGA_SYNC_INST/disp_ena
+    ----------------------------------------
+    Total                     11.681ns (7.134ns logic, 4.547ns route)
+                                       (61.1% logic, 38.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 1218 / 162
+-------------------------------------------------------------------------
+Offset:              7.865ns (Levels of Logic = 35)
+  Source:            btn_up (PAD)
+  Destination:       POSICIONADOR_INST/pos_y_31 (FF)
+  Destination Clock: clk rising
+
+  Data Path: btn_up to POSICIONADOR_INST/pos_y_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            34   1.218   1.438  btn_up_IBUF (btn_up_IBUF)
+     LUT4:I0->O            1   0.704   0.455  POSICIONADOR_INST/Mmux_pos_y_mux000021 (POSICIONADOR_INST/pos_y_mux0000<0>)
+     LUT3:I2->O            1   0.704   0.000  POSICIONADOR_INST/Mcount_pos_y_lut<0> (POSICIONADOR_INST/Mcount_pos_y_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  POSICIONADOR_INST/Mcount_pos_y_cy<0> (POSICIONADOR_INST/Mcount_pos_y_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_y_cy<1> (POSICIONADOR_INST/Mcount_pos_y_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_y_cy<2> (POSICIONADOR_INST/Mcount_pos_y_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_y_cy<3> (POSICIONADOR_INST/Mcount_pos_y_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_y_cy<4> (POSICIONADOR_INST/Mcount_pos_y_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_y_cy<5> (POSICIONADOR_INST/Mcount_pos_y_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_y_cy<6> (POSICIONADOR_INST/Mcount_pos_y_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_y_cy<7> (POSICIONADOR_INST/Mcount_pos_y_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_y_cy<8> (POSICIONADOR_INST/Mcount_pos_y_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_y_cy<9> (POSICIONADOR_INST/Mcount_pos_y_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_y_cy<10> (POSICIONADOR_INST/Mcount_pos_y_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_y_cy<11> (POSICIONADOR_INST/Mcount_pos_y_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_y_cy<12> (POSICIONADOR_INST/Mcount_pos_y_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_y_cy<13> (POSICIONADOR_INST/Mcount_pos_y_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_y_cy<14> (POSICIONADOR_INST/Mcount_pos_y_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_y_cy<15> (POSICIONADOR_INST/Mcount_pos_y_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_y_cy<16> (POSICIONADOR_INST/Mcount_pos_y_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_y_cy<17> (POSICIONADOR_INST/Mcount_pos_y_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_y_cy<18> (POSICIONADOR_INST/Mcount_pos_y_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_y_cy<19> (POSICIONADOR_INST/Mcount_pos_y_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_y_cy<20> (POSICIONADOR_INST/Mcount_pos_y_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_y_cy<21> (POSICIONADOR_INST/Mcount_pos_y_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_y_cy<22> (POSICIONADOR_INST/Mcount_pos_y_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_y_cy<23> (POSICIONADOR_INST/Mcount_pos_y_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_y_cy<24> (POSICIONADOR_INST/Mcount_pos_y_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_y_cy<25> (POSICIONADOR_INST/Mcount_pos_y_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_y_cy<26> (POSICIONADOR_INST/Mcount_pos_y_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_y_cy<27> (POSICIONADOR_INST/Mcount_pos_y_cy<27>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_y_cy<28> (POSICIONADOR_INST/Mcount_pos_y_cy<28>)
+     MUXCY:CI->O           1   0.059   0.000  POSICIONADOR_INST/Mcount_pos_y_cy<29> (POSICIONADOR_INST/Mcount_pos_y_cy<29>)
+     MUXCY:CI->O           0   0.059   0.000  POSICIONADOR_INST/Mcount_pos_y_cy<30> (POSICIONADOR_INST/Mcount_pos_y_cy<30>)
+     XORCY:CI->O           1   0.804   0.000  POSICIONADOR_INST/Mcount_pos_y_xor<31> (POSICIONADOR_INST/Mcount_pos_y31)
+     FDE:D                     0.308          POSICIONADOR_INST/pos_y_31
+    ----------------------------------------
+    Total                      7.865ns (5.972ns logic, 1.893ns route)
+                                       (75.9% logic, 24.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'VGA_FREQDIV_INST/clkout1'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              5.693ns (Levels of Logic = 2)
+  Source:            VGA_SYNC_INST/disp_ena (FF)
+  Destination:       rgb_out<2> (PAD)
+  Source Clock:      VGA_FREQDIV_INST/clkout1 rising
+
+  Data Path: VGA_SYNC_INST/disp_ena to rgb_out<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.591   0.706  VGA_SYNC_INST/disp_ena (VGA_SYNC_INST/disp_ena)
+     LUT4:I0->O            1   0.704   0.420  VGA_RGB_INST/rgb_s<2>1 (rgb_out_2_OBUF)
+     OBUF:I->O                 3.272          rgb_out_2_OBUF (rgb_out<2>)
+    ----------------------------------------
+    Total                      5.693ns (4.567ns logic, 1.126ns route)
+                                       (80.2% logic, 19.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 27 / 3
+-------------------------------------------------------------------------
+Offset:              9.144ns (Levels of Logic = 4)
+  Source:            BLOCK_RAM_INST/Mram_RAM9 (RAM)
+  Destination:       rgb_out<2> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: BLOCK_RAM_INST/Mram_RAM9 to rgb_out<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16_S1_S1:CLKB->DOB0    1   2.800   0.499  BLOCK_RAM_INST/Mram_RAM9 (N24)
+     LUT3:I1->O            1   0.704   0.000  inst_LPM_MUX2_7 (inst_LPM_MUX2_7)
+     MUXF5:I0->O           1   0.321   0.424  inst_LPM_MUX2_5_f5 (inst_LPM_MUX2_5_f5)
+     LUT4:I3->O            1   0.704   0.420  VGA_RGB_INST/rgb_s<2>1 (rgb_out_2_OBUF)
+     OBUF:I->O                 3.272          rgb_out_2_OBUF (rgb_out<2>)
+    ----------------------------------------
+    Total                      9.144ns (7.801ns logic, 1.343ns route)
+                                       (85.3% logic, 14.7% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 23.00 secs
+Total CPU time to Xst completion: 22.47 secs
+ 
+--> 
+
+Total memory usage is 274424 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   16 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

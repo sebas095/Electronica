@@ -1,0 +1,16 @@
+EN cont_princ NULL "D:/Electronica/Lab. Electronica/proyecto/siete_segmentos/Cont_princ.vhd" sub00/vhpl02 1417725959
+AR mod_display behavioral "D:/Electronica/Lab. Electronica/proyecto/siete_segmentos/mod_display.vhd" sub00/vhpl13 1417725970
+EN mult NULL "D:/Electronica/Lab. Electronica/proyecto/siete_segmentos/Mult.vhd" sub00/vhpl10 1417725967
+AR ultimate behavioral "D:/Electronica/Lab. Electronica/proyecto/siete_segmentos/Ultimate.vhd" sub00/vhpl15 1417725972
+EN ultimate NULL "D:/Electronica/Lab. Electronica/proyecto/siete_segmentos/Ultimate.vhd" sub00/vhpl14 1417725971
+EN cont_digits NULL "D:/Electronica/Lab. Electronica/proyecto/siete_segmentos/Cont_digits.vhd" sub00/vhpl04 1417725961
+EN maquina_est NULL "D:/Electronica/Lab. Electronica/proyecto/siete_segmentos/Maquina_est.vhd" sub00/vhpl08 1417725965
+AR cont_princ c_principal "D:/Electronica/Lab. Electronica/proyecto/siete_segmentos/Cont_princ.vhd" sub00/vhpl03 1417725960
+AR act_disp actualizador "D:/Electronica/Lab. Electronica/proyecto/siete_segmentos/Act_disp.vhd" sub00/vhpl07 1417725964
+EN act_disp NULL "D:/Electronica/Lab. Electronica/proyecto/siete_segmentos/Act_disp.vhd" sub00/vhpl06 1417725963
+EN vel_cont NULL "D:/Electronica/Lab. Electronica/proyecto/siete_segmentos/Vel_cont.vhd" sub00/vhpl00 1417725957
+AR maquina_est behavioral "D:/Electronica/Lab. Electronica/proyecto/siete_segmentos/Maquina_est.vhd" sub00/vhpl09 1417725966
+EN mod_display NULL "D:/Electronica/Lab. Electronica/proyecto/siete_segmentos/mod_display.vhd" sub00/vhpl12 1417725969
+AR vel_cont velocidad "D:/Electronica/Lab. Electronica/proyecto/siete_segmentos/Vel_cont.vhd" sub00/vhpl01 1417725958
+AR cont_digits behavioral "D:/Electronica/Lab. Electronica/proyecto/siete_segmentos/Cont_digits.vhd" sub00/vhpl05 1417725962
+AR mult behavioral "D:/Electronica/Lab. Electronica/proyecto/siete_segmentos/Mult.vhd" sub00/vhpl11 1417725968

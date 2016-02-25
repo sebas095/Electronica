@@ -1,0 +1,17 @@
+NET "clk" LOC = B8;
+
+NET "btn_up" LOC = H13;
+NET "btn_down" LOC = E18;
+NET "btn_left" LOC = D18;
+NET "btn_right" LOC = B18;
+NET "enable" LOC = R17;
+NET "switch_r" LOC = K18;
+NET "switch_g" LOC = H18;
+NET "switch_b" LOC = G18;
+
+NET "hsync" LOC = T4;
+NET "vsync" LOC = U3;
+
+NET "rgb_out[2]" LOC = U4;
+NET "rgb_out[1]" LOC = P6;
+NET "rgb_out[0]" LOC = R8;

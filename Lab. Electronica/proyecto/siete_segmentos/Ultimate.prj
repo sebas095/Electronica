@@ -1,0 +1,8 @@
+vhdl work "Vel_cont.vhd"
+vhdl work "Cont_princ.vhd"
+vhdl work "Mult.vhd"
+vhdl work "mod_display.vhd"
+vhdl work "Maquina_est.vhd"
+vhdl work "Cont_digits.vhd"
+vhdl work "Act_disp.vhd"
+vhdl work "Ultimate.vhd"

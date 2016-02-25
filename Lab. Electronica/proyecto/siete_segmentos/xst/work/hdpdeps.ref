@@ -1,0 +1,58 @@
+V3 31
+FL "D:/Electronica/Lab. Electronica/proyecto/siete_segmentos/Act_disp.vhd" 2014/06/09.10:17:22 P.20131013
+EN work/Act_disp 1417725963 \
+      FL "D:/Electronica/Lab. Electronica/proyecto/siete_segmentos/Act_disp.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Act_disp/Actualizador 1417725964 \
+      FL "D:/Electronica/Lab. Electronica/proyecto/siete_segmentos/Act_disp.vhd" \
+      EN work/Act_disp 1417725963
+FL "D:/Electronica/Lab. Electronica/proyecto/siete_segmentos/Cont_digits.vhd" 2014/05/30.09:20:40 P.20131013
+EN work/Cont_digits 1417725961 \
+      FL "D:/Electronica/Lab. Electronica/proyecto/siete_segmentos/Cont_digits.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/Cont_digits/Behavioral 1417725962 \
+      FL "D:/Electronica/Lab. Electronica/proyecto/siete_segmentos/Cont_digits.vhd" \
+      EN work/Cont_digits 1417725961 CP Vel_cont CP Cont_princ
+FL "D:/Electronica/Lab. Electronica/proyecto/siete_segmentos/Cont_princ.vhd" 2014/05/27.15:30:26 P.20131013
+EN work/Cont_princ 1417725959 \
+      FL "D:/Electronica/Lab. Electronica/proyecto/siete_segmentos/Cont_princ.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Cont_princ/C_principal 1417725960 \
+      FL "D:/Electronica/Lab. Electronica/proyecto/siete_segmentos/Cont_princ.vhd" \
+      EN work/Cont_princ 1417725959
+FL "D:/Electronica/Lab. Electronica/proyecto/siete_segmentos/Maquina_est.vhd" 2014/06/09.21:52:12 P.20131013
+EN work/Maquina_est 1417725965 \
+      FL "D:/Electronica/Lab. Electronica/proyecto/siete_segmentos/Maquina_est.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/Maquina_est/Behavioral 1417725966 \
+      FL "D:/Electronica/Lab. Electronica/proyecto/siete_segmentos/Maquina_est.vhd" \
+      EN work/Maquina_est 1417725965
+FL "D:/Electronica/Lab. Electronica/proyecto/siete_segmentos/mod_display.vhd" 2014/06/04.11:31:14 P.20131013
+EN work/mod_display 1417725969 \
+      FL "D:/Electronica/Lab. Electronica/proyecto/siete_segmentos/mod_display.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/mod_display/Behavioral 1417725970 \
+      FL "D:/Electronica/Lab. Electronica/proyecto/siete_segmentos/mod_display.vhd" \
+      EN work/mod_display 1417725969
+FL "D:/Electronica/Lab. Electronica/proyecto/siete_segmentos/Mult.vhd" 2014/05/16.11:32:50 P.20131013
+EN work/Mult 1417725967 \
+      FL "D:/Electronica/Lab. Electronica/proyecto/siete_segmentos/Mult.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/Mult/Behavioral 1417725968 \
+      FL "D:/Electronica/Lab. Electronica/proyecto/siete_segmentos/Mult.vhd" \
+      EN work/Mult 1417725967
+FL "D:/Electronica/Lab. Electronica/proyecto/siete_segmentos/Ultimate.vhd" 2014/06/09.21:58:32 P.20131013
+EN work/Ultimate 1417725971 \
+      FL "D:/Electronica/Lab. Electronica/proyecto/siete_segmentos/Ultimate.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/Ultimate/Behavioral 1417725972 \
+      FL "D:/Electronica/Lab. Electronica/proyecto/siete_segmentos/Ultimate.vhd" \
+      EN work/Ultimate 1417725971 CP Cont_digits CP Act_disp CP Maquina_est CP Mult \
+      CP mod_display
+FL "D:/Electronica/Lab. Electronica/proyecto/siete_segmentos/Vel_cont.vhd" 2014/06/09.21:52:12 P.20131013
+EN work/Vel_cont 1417725957 \
+      FL "D:/Electronica/Lab. Electronica/proyecto/siete_segmentos/Vel_cont.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Vel_cont/velocidad 1417725958 \
+      FL "D:/Electronica/Lab. Electronica/proyecto/siete_segmentos/Vel_cont.vhd" \
+      EN work/Vel_cont 1417725957

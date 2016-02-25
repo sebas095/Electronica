@@ -1,0 +1,5 @@
+set -tmpdir "D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/xst/projnav.tmp"
+set -xsthdpdir "D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/xst"
+elaborate
+-ifn posicionador.prj
+-ifmt mixed

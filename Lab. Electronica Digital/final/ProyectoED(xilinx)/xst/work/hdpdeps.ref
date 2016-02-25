@@ -1,0 +1,45 @@
+V3 23
+FL "D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/block_ram.vhd" 2014/12/08.22:06:19 P.20131013
+EN work/block_ram 1418157757 \
+      FL "D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/block_ram.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB std/TEXTIO 1381692176
+AR work/block_ram/Behavioral 1418157758 \
+      FL "D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/block_ram.vhd" \
+      EN work/block_ram 1418157757
+FL "D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/DivFreq.vhd" 2014/11/11.12:21:20 P.20131013
+EN work/DivFreq 1418157751 \
+      FL "D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/DivFreq.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/DivFreq/DivF 1418157752 \
+      FL "D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/DivFreq.vhd" \
+      EN work/DivFreq 1418157751
+FL "D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/posicionador.vhd" 2014/12/09.14:08:10 P.20131013
+EN work/posicionador 1418157759 \
+      FL "D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/posicionador.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/posicionador/Behavioral 1418157760 \
+      FL "D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/posicionador.vhd" \
+      EN work/posicionador 1418157759
+FL "D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/proyecto.vhd" 2014/12/09.13:35:56 P.20131013
+EN work/proyecto 1418157761 \
+      FL "D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/proyecto.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/proyecto/Behavioral 1418157762 \
+      FL "D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/proyecto.vhd" \
+      EN work/proyecto 1418157761 CP DivFreq CP vga_sync CP vga_rgb CP block_ram \
+      CP posicionador
+FL "D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/vga_rgb.vhd" 2014/12/02.09:45:32 P.20131013
+EN work/vga_rgb 1418157755 \
+      FL "D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/vga_rgb.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/vga_rgb/Behavioral 1418157756 \
+      FL "D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/vga_rgb.vhd" \
+      EN work/vga_rgb 1418157755
+FL "D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/vga_sync.vhd" 2014/12/02.10:08:50 P.20131013
+EN work/vga_sync 1418157753 \
+      FL "D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/vga_sync.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/vga_sync/Behavioral 1418157754 \
+      FL "D:/Electronica/Lab. Electronica Digital/ProyectoLD/ProyectoED/vga_sync.vhd" \
+      EN work/vga_sync 1418157753

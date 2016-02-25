@@ -1,0 +1,2 @@
+vhdl work "posicionador.vhd"
+vhdl work "posicionador_tb.vhd"

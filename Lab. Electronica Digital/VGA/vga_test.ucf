@@ -1,0 +1,10 @@
+NET "clk" LOC = B8;
+
+NET "rgb_out[2]" LOC = R8;
+NET "rgb_out[1]" LOC = P6;
+NET "rgb_out[0]" LOC = U4;
+NET "rgb_in[2]" LOC = K18;
+NET "rgb_in[1]" LOC = H18;
+NET "rgb_in[0]" LOC = G18;
+NET "hsync" LOC = T4;
+NET "vsync" LOC = U3;

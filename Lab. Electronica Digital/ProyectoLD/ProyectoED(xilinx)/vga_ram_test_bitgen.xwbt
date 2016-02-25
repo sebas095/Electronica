@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\Electronica\Lab. Electronica Digital\ProyectoLD\ProyectoED\vga_ram_test.ncd
+OUTFILE=D:\Electronica\Lab. Electronica Digital\ProyectoLD\ProyectoED\vga_ram_test.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=D:\Electronica\Lab. Electronica Digital\ProyectoLD\ProyectoED
+LICENSE=WebPack
+USER_INFO=210645732_0_0_259
