@@ -1,0 +1,8 @@
+[Inputs]
+D
+En
+Reset
+Clk
+[Outputs]
+Q
+[BiDir]

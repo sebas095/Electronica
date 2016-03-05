@@ -1,0 +1,497 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.60 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.60 secs
+ 
+--> Reading design: Salida_7Seg.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Salida_7Seg.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Salida_7Seg"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : Salida_7Seg
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+WARNING:HDLParsers:3607 - Unit work/Salida_7Seg is now defined in a different file.  It was defined in "/opt/Xilinx/14.7/Contador/Salida_7Seg.vhd", and is now defined in "C:/Xilinx/14.7/Contador/Salida_7Seg.vhd".
+WARNING:HDLParsers:3607 - Unit work/Salida_7Seg/Arq_Salida_7Seg is now defined in a different file.  It was defined in "/opt/Xilinx/14.7/Contador/Salida_7Seg.vhd", and is now defined in "C:/Xilinx/14.7/Contador/Salida_7Seg.vhd".
+WARNING:HDLParsers:3607 - Unit work/principal is now defined in a different file.  It was defined in "/opt/Xilinx/14.7/Contador/principal.vhd", and is now defined in "C:/Xilinx/14.7/Contador/principal.vhd".
+WARNING:HDLParsers:3607 - Unit work/principal/Arq_principal is now defined in a different file.  It was defined in "/opt/Xilinx/14.7/Contador/principal.vhd", and is now defined in "C:/Xilinx/14.7/Contador/principal.vhd".
+WARNING:HDLParsers:3607 - Unit work/siete_seg is now defined in a different file.  It was defined in "/opt/Xilinx/14.7/Contador/siete_seg.vhd", and is now defined in "C:/Xilinx/14.7/Contador/siete_seg.vhd".
+WARNING:HDLParsers:3607 - Unit work/siete_seg/Arq_siete_seg is now defined in a different file.  It was defined in "/opt/Xilinx/14.7/Contador/siete_seg.vhd", and is now defined in "C:/Xilinx/14.7/Contador/siete_seg.vhd".
+WARNING:HDLParsers:3607 - Unit work/ptd is now defined in a different file.  It was defined in "/opt/Xilinx/14.7/Contador/ptd.vhd", and is now defined in "C:/Xilinx/14.7/Contador/ptd.vhd".
+WARNING:HDLParsers:3607 - Unit work/ptd/Arq_ptd is now defined in a different file.  It was defined in "/opt/Xilinx/14.7/Contador/ptd.vhd", and is now defined in "C:/Xilinx/14.7/Contador/ptd.vhd".
+Compiling vhdl file "C:/Xilinx/14.7/Contador/latch_d.vhd" in Library work.
+Architecture arq_latch_d of Entity latch_d is up to date.
+Compiling vhdl file "C:/Xilinx/14.7/Contador/ptd.vhd" in Library work.
+Architecture arq_ptd of Entity ptd is up to date.
+Compiling vhdl file "C:/Xilinx/14.7/Contador/cont_09.vhd" in Library work.
+Architecture arq_cont_09 of Entity cont_09 is up to date.
+Compiling vhdl file "C:/Xilinx/14.7/Contador/principal.vhd" in Library work.
+Architecture arq_principal of Entity principal is up to date.
+Compiling vhdl file "C:/Xilinx/14.7/Contador/siete_seg.vhd" in Library work.
+Architecture arq_siete_seg of Entity siete_seg is up to date.
+Compiling vhdl file "C:/Xilinx/14.7/Contador/Salida_7Seg.vhd" in Library work.
+Architecture arq_salida_7seg of Entity salida_7seg is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Salida_7Seg> in library <work> (architecture <arq_salida_7seg>).
+
+Analyzing hierarchy for entity <principal> in library <work> (architecture <arq_principal>).
+
+Analyzing hierarchy for entity <siete_seg> in library <work> (architecture <arq_siete_seg>).
+
+Analyzing hierarchy for entity <ptd> in library <work> (architecture <arq_ptd>).
+
+Analyzing hierarchy for entity <cont_09> in library <work> (architecture <arq_cont_09>).
+
+Analyzing hierarchy for entity <latch_d> in library <work> (architecture <arq_latch_d>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Salida_7Seg> in library <work> (Architecture <arq_salida_7seg>).
+Entity <Salida_7Seg> analyzed. Unit <Salida_7Seg> generated.
+
+Analyzing Entity <principal> in library <work> (Architecture <arq_principal>).
+Entity <principal> analyzed. Unit <principal> generated.
+
+Analyzing Entity <ptd> in library <work> (Architecture <arq_ptd>).
+Entity <ptd> analyzed. Unit <ptd> generated.
+
+Analyzing Entity <cont_09> in library <work> (Architecture <arq_cont_09>).
+Entity <cont_09> analyzed. Unit <cont_09> generated.
+
+Analyzing Entity <latch_d> in library <work> (Architecture <arq_latch_d>).
+WARNING:Xst:819 - "C:/Xilinx/14.7/Contador/latch_d.vhd" line 23: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <count>
+Entity <latch_d> analyzed. Unit <latch_d> generated.
+
+Analyzing Entity <siete_seg> in library <work> (Architecture <arq_siete_seg>).
+Entity <siete_seg> analyzed. Unit <siete_seg> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <siete_seg>.
+    Related source file is "C:/Xilinx/14.7/Contador/siete_seg.vhd".
+    Found 16x8-bit ROM for signal <Siete_seg_out>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <siete_seg> synthesized.
+
+
+Synthesizing Unit <ptd>.
+    Related source file is "C:/Xilinx/14.7/Contador/ptd.vhd".
+    Found 1-bit register for signal <En_ptd>.
+    Found 25-bit register for signal <count>.
+    Found 25-bit adder for signal <count$addsub0000>.
+    Found 25-bit comparator greatequal for signal <En_ptd$cmp_ge0000> created at line 23.
+    Found 25-bit comparator greater for signal <En_ptd$cmp_gt0000> created at line 28.
+    Found 25-bit comparator lessequal for signal <En_ptd$cmp_le0000> created at line 28.
+    Found 25-bit comparator less for signal <En_ptd$cmp_lt0000> created at line 23.
+    Summary:
+	inferred  26 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   4 Comparator(s).
+Unit <ptd> synthesized.
+
+
+Synthesizing Unit <latch_d>.
+    Related source file is "C:/Xilinx/14.7/Contador/latch_d.vhd".
+    Found 25-bit register for signal <count>.
+    Found 25-bit adder for signal <count$addsub0000> created at line 33.
+    Found 25-bit comparator greatequal for signal <count$cmp_ge0000> created at line 30.
+    Found 1-bit register for signal <So>.
+    Summary:
+	inferred  26 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <latch_d> synthesized.
+
+
+Synthesizing Unit <cont_09>.
+    Related source file is "C:/Xilinx/14.7/Contador/cont_09.vhd".
+    Found 1-bit xor2 for signal <D_aux_2$xor0000> created at line 32.
+Unit <cont_09> synthesized.
+
+
+Synthesizing Unit <principal>.
+    Related source file is "C:/Xilinx/14.7/Contador/principal.vhd".
+Unit <principal> synthesized.
+
+
+Synthesizing Unit <Salida_7Seg>.
+    Related source file is "C:/Xilinx/14.7/Contador/Salida_7Seg.vhd".
+Unit <Salida_7Seg> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x8-bit ROM                                          : 1
+# Adders/Subtractors                                   : 5
+ 25-bit adder                                          : 5
+# Registers                                            : 10
+ 1-bit register                                        : 5
+ 25-bit register                                       : 5
+# Comparators                                          : 8
+ 25-bit comparator greatequal                          : 5
+ 25-bit comparator greater                             : 1
+ 25-bit comparator less                                : 1
+ 25-bit comparator lessequal                           : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x8-bit ROM                                          : 1
+# Adders/Subtractors                                   : 5
+ 25-bit adder                                          : 5
+# Registers                                            : 130
+ Flip-Flops                                            : 130
+# Comparators                                          : 8
+ 25-bit comparator greatequal                          : 5
+ 25-bit comparator greater                             : 1
+ 25-bit comparator less                                : 1
+ 25-bit comparator lessequal                           : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Salida_7Seg> ...
+
+Optimizing unit <ptd> ...
+
+Optimizing unit <latch_d> ...
+
+Optimizing unit <cont_09> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Salida_7Seg, actual ratio is 4.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 130
+ Flip-Flops                                            : 130
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Salida_7Seg.ngr
+Top Level Output File Name         : Salida_7Seg
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 11
+
+Cell Usage :
+# BELS                             : 712
+#      GND                         : 1
+#      INV                         : 23
+#      LUT1                        : 140
+#      LUT2                        : 25
+#      LUT3                        : 104
+#      LUT3_L                      : 1
+#      LUT4                        : 90
+#      LUT4_D                      : 4
+#      LUT4_L                      : 10
+#      MUXCY                       : 184
+#      MUXF5                       : 4
+#      VCC                         : 1
+#      XORCY                       : 125
+# FlipFlops/Latches                : 130
+#      FDCE                        : 100
+#      FDE                         : 26
+#      FDRE                        : 4
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 10
+#      IBUF                        : 2
+#      OBUF                        : 8
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      216  out of   4656     4%  
+ Number of Slice Flip Flops:            130  out of   9312     1%  
+ Number of 4 input LUTs:                397  out of   9312     4%  
+ Number of IOs:                          11
+ Number of bonded IOBs:                  11  out of    232     4%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 130   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+--------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------+-------+
+Control Signal                                                                                                      | Buffer(FF name)                                     | Load  |
+--------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------+-------+
+Inst_principal/Inst_cont/Inst_latch_D0/count_cmp_eq0001(Inst_principal/Inst_cont/Inst_latch_D0/count_cmp_eq000125:O)| NONE(Inst_principal/Inst_cont/Inst_latch_D0/count_0)| 25    |
+Inst_principal/Inst_cont/Inst_latch_D1/count_cmp_eq0001(Inst_principal/Inst_cont/Inst_latch_D1/count_cmp_eq000125:O)| NONE(Inst_principal/Inst_cont/Inst_latch_D1/count_0)| 25    |
+Inst_principal/Inst_cont/Inst_latch_D2/count_cmp_eq0001(Inst_principal/Inst_cont/Inst_latch_D2/count_cmp_eq000125:O)| NONE(Inst_principal/Inst_cont/Inst_latch_D2/count_0)| 25    |
+Inst_principal/Inst_cont/Inst_latch_D3/count_cmp_eq0001(Inst_principal/Inst_cont/Inst_latch_D3/count_cmp_eq000125:O)| NONE(Inst_principal/Inst_cont/Inst_latch_D3/count_0)| 25    |
+--------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 7.282ns (Maximum Frequency: 137.326MHz)
+   Minimum input arrival time before clock: 5.198ns
+   Maximum output required time after clock: 6.095ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 7.282ns (frequency: 137.326MHz)
+  Total number of paths / destination ports: 11078 / 260
+-------------------------------------------------------------------------
+Delay:               7.282ns (Levels of Logic = 12)
+  Source:            Inst_principal/Inst_ptd/count_6 (FF)
+  Destination:       Inst_principal/Inst_ptd/count_24 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: Inst_principal/Inst_ptd/count_6 to Inst_principal/Inst_ptd/count_24
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              5   0.591   0.808  Inst_principal/Inst_ptd/count_6 (Inst_principal/Inst_ptd/count_6)
+     LUT1:I0->O            1   0.704   0.000  Inst_principal/Inst_ptd/Mcompar_En_ptd_cmp_lt0000_cy<0>_rt (Inst_principal/Inst_ptd/Mcompar_En_ptd_cmp_lt0000_cy<0>_rt)
+     MUXCY:S->O            1   0.464   0.000  Inst_principal/Inst_ptd/Mcompar_En_ptd_cmp_lt0000_cy<0> (Inst_principal/Inst_ptd/Mcompar_En_ptd_cmp_lt0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_principal/Inst_ptd/Mcompar_En_ptd_cmp_lt0000_cy<1> (Inst_principal/Inst_ptd/Mcompar_En_ptd_cmp_lt0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_principal/Inst_ptd/Mcompar_En_ptd_cmp_lt0000_cy<2> (Inst_principal/Inst_ptd/Mcompar_En_ptd_cmp_lt0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_principal/Inst_ptd/Mcompar_En_ptd_cmp_lt0000_cy<3> (Inst_principal/Inst_ptd/Mcompar_En_ptd_cmp_lt0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_principal/Inst_ptd/Mcompar_En_ptd_cmp_lt0000_cy<4> (Inst_principal/Inst_ptd/Mcompar_En_ptd_cmp_lt0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_principal/Inst_ptd/Mcompar_En_ptd_cmp_lt0000_cy<5> (Inst_principal/Inst_ptd/Mcompar_En_ptd_cmp_lt0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_principal/Inst_ptd/Mcompar_En_ptd_cmp_lt0000_cy<6> (Inst_principal/Inst_ptd/Mcompar_En_ptd_cmp_lt0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_principal/Inst_ptd/Mcompar_En_ptd_cmp_lt0000_cy<7> (Inst_principal/Inst_ptd/Mcompar_En_ptd_cmp_lt0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_principal/Inst_ptd/Mcompar_En_ptd_cmp_lt0000_cy<8> (Inst_principal/Inst_ptd/Mcompar_En_ptd_cmp_lt0000_cy<8>)
+     MUXCY:CI->O          28   0.459   1.265  Inst_principal/Inst_ptd/Mcompar_En_ptd_cmp_lt0000_cy<9> (Inst_principal/Inst_ptd/Mcompar_En_ptd_cmp_lt0000_cy<9>)
+     LUT4:I3->O           25   0.704   1.260  Inst_principal/Inst_ptd/count_not000211 (Inst_principal/Inst_ptd/count_not0002)
+     FDE:CE                    0.555          Inst_principal/Inst_ptd/count_0
+    ----------------------------------------
+    Total                      7.282ns (3.949ns logic, 3.333ns route)
+                                       (54.2% logic, 45.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 231 / 231
+-------------------------------------------------------------------------
+Offset:              5.198ns (Levels of Logic = 2)
+  Source:            Reset (PAD)
+  Destination:       Inst_principal/Inst_cont/Inst_latch_D3/count_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: Reset to Inst_principal/Inst_cont/Inst_latch_D3/count_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           108   1.218   1.461  Reset_IBUF (Reset_IBUF)
+     LUT4:I0->O           25   0.704   1.260  Inst_principal/Inst_cont/Inst_latch_D3/count_not00021 (Inst_principal/Inst_cont/Inst_latch_D3/count_not0002)
+     FDCE:CE                   0.555          Inst_principal/Inst_cont/Inst_latch_D3/count_0
+    ----------------------------------------
+    Total                      5.198ns (2.477ns logic, 2.721ns route)
+                                       (47.7% logic, 52.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 28 / 7
+-------------------------------------------------------------------------
+Offset:              6.095ns (Levels of Logic = 2)
+  Source:            Inst_principal/Inst_cont/Inst_latch_D0/So (FF)
+  Destination:       Siete_seg_out<7> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: Inst_principal/Inst_cont/Inst_latch_D0/So to Siete_seg_out<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            11   0.591   1.108  Inst_principal/Inst_cont/Inst_latch_D0/So (Inst_principal/Inst_cont/Inst_latch_D0/So)
+     LUT4:I0->O            1   0.704   0.420  Inst_7seg/Mrom_Siete_seg_out51 (Siete_seg_out_5_OBUF)
+     OBUF:I->O                 3.272          Siete_seg_out_5_OBUF (Siete_seg_out<5>)
+    ----------------------------------------
+    Total                      6.095ns (4.567ns logic, 1.528ns route)
+                                       (74.9% logic, 25.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 17.00 secs
+Total CPU time to Xst completion: 16.99 secs
+ 
+--> 
+
+Total memory usage is 236424 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    9 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

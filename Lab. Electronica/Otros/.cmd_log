@@ -1,0 +1,1 @@
+vhdtdtfi -lib work ptd-cont.vhd -prj Contador -o .spl -module {} -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 

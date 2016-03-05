@@ -1,0 +1,28 @@
+xst -intstyle ise -ifn "/opt/Xilinx/14.7/Contador/Salida_7Seg.xst" -ofn "/opt/Xilinx/14.7/Contador/Salida_7Seg.syr" 
+xst -intstyle ise -ifn "/opt/Xilinx/14.7/Contador/Salida_7Seg.xst" -ofn "/opt/Xilinx/14.7/Contador/Salida_7Seg.syr" 
+xst -intstyle ise -ifn "/opt/Xilinx/14.7/Contador/Salida_7Seg.xst" -ofn "/opt/Xilinx/14.7/Contador/Salida_7Seg.syr" 
+xst -intstyle ise -ifn "/opt/Xilinx/14.7/Contador/Salida_7Seg.xst" -ofn "/opt/Xilinx/14.7/Contador/Salida_7Seg.syr" 
+xst -intstyle ise -ifn "/opt/Xilinx/14.7/Contador/Salida_7Seg.xst" -ofn "/opt/Xilinx/14.7/Contador/Salida_7Seg.syr" 
+xst -intstyle ise -ifn "/opt/Xilinx/14.7/Contador/Salida_7Seg.xst" -ofn "/opt/Xilinx/14.7/Contador/Salida_7Seg.syr" 
+xst -intstyle ise -ifn "/opt/Xilinx/14.7/Contador/Salida_7Seg.xst" -ofn "/opt/Xilinx/14.7/Contador/Salida_7Seg.syr" 
+xst -intstyle ise -ifn "/opt/Xilinx/14.7/Contador/Salida_7Seg.xst" -ofn "/opt/Xilinx/14.7/Contador/Salida_7Seg.syr" 
+xst -intstyle ise -ifn "/opt/Xilinx/14.7/Contador/Salida_7Seg.xst" -ofn "/opt/Xilinx/14.7/Contador/Salida_7Seg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 Salida_7Seg.ngc Salida_7Seg.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Salida_7Seg_map.ncd Salida_7Seg.ngd Salida_7Seg.pcf 
+par -w -intstyle ise -ol high -t 1 Salida_7Seg_map.ncd Salida_7Seg.ncd Salida_7Seg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Salida_7Seg.twx Salida_7Seg.ncd -o Salida_7Seg.twr Salida_7Seg.pcf 
+xst -intstyle ise -ifn "/opt/Xilinx/14.7/Contador/Salida_7Seg.xst" -ofn "/opt/Xilinx/14.7/Contador/Salida_7Seg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 Salida_7Seg.ngc Salida_7Seg.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Salida_7Seg_map.ncd Salida_7Seg.ngd Salida_7Seg.pcf 
+par -w -intstyle ise -ol high -t 1 Salida_7Seg_map.ncd Salida_7Seg.ncd Salida_7Seg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Salida_7Seg.twx Salida_7Seg.ncd -o Salida_7Seg.twr Salida_7Seg.pcf 
+xst -intstyle ise -ifn "C:/Xilinx/14.7/Contador/Salida_7Seg.xst" -ofn "C:/Xilinx/14.7/Contador/Salida_7Seg.syr" 
+netgen -intstyle ise -ar Structure -tm Salida_7Seg -w -dir netgen/synthesis -ofmt vhdl -sim Salida_7Seg.ngc Salida_7Seg_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 Salida_7Seg.ngc Salida_7Seg.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Salida_7Seg_map.ncd Salida_7Seg.ngd Salida_7Seg.pcf 
+par -w -intstyle ise -ol high -t 1 Salida_7Seg_map.ncd Salida_7Seg.ncd Salida_7Seg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Salida_7Seg.twx Salida_7Seg.ncd -o Salida_7Seg.twr Salida_7Seg.pcf 
+bitgen -intstyle ise -f Salida_7Seg.ut Salida_7Seg.ncd 
+vhdtdtfi -lib work latch_d.vhd -lib work ptd.vhd -lib work cont_09.vhd -lib work siete_seg.vhd -lib work principal.vhd -lib work Salida_7Seg.vhd -prj Contador -o Salida_7Seg.spl -module Salida_7Seg -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Salida_7Seg.spl C:/Xilinx/14.7/Contador/Salida_7Seg.sym 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Salida_7Seg.ucf -p xc3s500e-fg320-4 Salida_7Seg.ngc Salida_7Seg.ngd  

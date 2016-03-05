@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/opt/Xilinx/14.7/Contador/Div_frecuencia.xst" -ofn "/opt/Xilinx/14.7/Contador/Div_frecuencia.syr" 

@@ -1,0 +1,38 @@
+xst -intstyle ise -ifn "/opt/Xilinx/14.7/Contador/cont_09.xst" -ofn "/opt/Xilinx/14.7/Contador/cont_09.syr" 
+netgen -intstyle ise -ar Structure -tm cont_09 -w -dir netgen/synthesis -ofmt vhdl -sim cont_09.ngc cont_09_synthesis.vhd 
+xst -intstyle ise -ifn "/opt/Xilinx/14.7/Contador/cont_09.xst" -ofn "/opt/Xilinx/14.7/Contador/cont_09.syr" 
+xst -intstyle ise -ifn "/opt/Xilinx/14.7/Contador/cont_09.xst" -ofn "/opt/Xilinx/14.7/Contador/cont_09.syr" 
+xst -intstyle ise -ifn "/opt/Xilinx/14.7/Contador/cont_09.xst" -ofn "/opt/Xilinx/14.7/Contador/cont_09.syr" 
+xst -intstyle ise -ifn "/opt/Xilinx/14.7/Contador/cont_09.xst" -ofn "/opt/Xilinx/14.7/Contador/cont_09.syr" 
+xst -intstyle ise -ifn "/opt/Xilinx/14.7/Contador/cont_09.xst" -ofn "/opt/Xilinx/14.7/Contador/cont_09.syr" 
+xst -intstyle ise -ifn "/opt/Xilinx/14.7/Contador/cont_09.xst" -ofn "/opt/Xilinx/14.7/Contador/cont_09.syr" 
+xst -intstyle ise -ifn "/opt/Xilinx/14.7/Contador/cont_09.xst" -ofn "/opt/Xilinx/14.7/Contador/cont_09.syr" 
+xst -intstyle ise -ifn "/opt/Xilinx/14.7/Contador/cont_09.xst" -ofn "/opt/Xilinx/14.7/Contador/cont_09.syr" 
+xst -intstyle ise -ifn "/opt/Xilinx/14.7/Contador/cont_09.xst" -ofn "/opt/Xilinx/14.7/Contador/cont_09.syr" 
+xst -intstyle ise -ifn "/opt/Xilinx/14.7/Contador/cont_09.xst" -ofn "/opt/Xilinx/14.7/Contador/cont_09.syr" 
+xst -intstyle ise -ifn "/opt/Xilinx/14.7/Contador/cont_09.xst" -ofn "/opt/Xilinx/14.7/Contador/cont_09.syr" 
+xst -intstyle ise -ifn "/opt/Xilinx/14.7/Contador/cont_09.xst" -ofn "/opt/Xilinx/14.7/Contador/cont_09.syr" 
+xst -intstyle ise -ifn "/opt/Xilinx/14.7/Contador/cont_09.xst" -ofn "/opt/Xilinx/14.7/Contador/cont_09.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/14.7/Contador/cont_09.xst" -ofn "C:/Xilinx/14.7/Contador/cont_09.syr" 
+netgen -intstyle ise -ar Structure -tm cont_09 -w -dir netgen/synthesis -ofmt vhdl -sim cont_09.ngc cont_09_synthesis.vhd 
+xst -intstyle ise -ifn "C:/Xilinx/14.7/Contador/cont_09.xst" -ofn "C:/Xilinx/14.7/Contador/cont_09.syr" 
+netgen -intstyle ise -ar Structure -tm cont_09 -w -dir netgen/synthesis -ofmt vhdl -sim cont_09.ngc cont_09_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 cont_09.ngc cont_09.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o cont_09_map.ncd cont_09.ngd cont_09.pcf 
+par -w -intstyle ise -ol high -t 1 cont_09_map.ncd cont_09.ncd cont_09.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cont_09.twx cont_09.ncd -o cont_09.twr cont_09.pcf 
+xst -intstyle ise -ifn "C:/Xilinx/14.7/Contador/cont_09.xst" -ofn "C:/Xilinx/14.7/Contador/cont_09.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 cont_09.ngc cont_09.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o cont_09_map.ncd cont_09.ngd cont_09.pcf 
+par -w -intstyle ise -ol high -t 1 cont_09_map.ncd cont_09.ncd cont_09.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cont_09.twx cont_09.ncd -o cont_09.twr cont_09.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 cont_09.ngc cont_09.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o cont_09_map.ncd cont_09.ngd cont_09.pcf 
+par -w -intstyle ise -ol high -t 1 cont_09_map.ncd cont_09.ncd cont_09.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cont_09.twx cont_09.ncd -o cont_09.twr cont_09.pcf 
+xst -intstyle ise -ifn "C:/Xilinx/14.7/Contador/cont_09.xst" -ofn "C:/Xilinx/14.7/Contador/cont_09.syr" 
+netgen -intstyle ise -ar Structure -tm cont_09 -w -dir netgen/synthesis -ofmt vhdl -sim cont_09.ngc cont_09_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 cont_09.ngc cont_09.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o cont_09_map.ncd cont_09.ngd cont_09.pcf 
+par -w -intstyle ise -ol high -t 1 cont_09_map.ncd cont_09.ncd cont_09.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cont_09.twx cont_09.ncd -o cont_09.twr cont_09.pcf 

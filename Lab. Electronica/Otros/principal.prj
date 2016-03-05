@@ -1,0 +1,4 @@
+vhdl work "latch_d.vhd"
+vhdl work "ptd.vhd"
+vhdl work "cont_09.vhd"
+vhdl work "principal.vhd"

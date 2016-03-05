@@ -1,0 +1,6 @@
+work	"Salida_7Seg.vhd"
+work	"cont_09.vhd"
+work	"latch_d.vhd"
+work	"principal.vhd"
+work	"ptd.vhd"
+work	"siete_seg.vhd"

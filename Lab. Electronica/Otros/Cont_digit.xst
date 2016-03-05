@@ -1,0 +1,5 @@
+set -tmpdir "C:/Xilinx/14.7/Contador/xst/projnav.tmp"
+set -xsthdpdir "C:/Xilinx/14.7/Contador/xst"
+elaborate
+-ifn Cont_digit.prj
+-ifmt mixed

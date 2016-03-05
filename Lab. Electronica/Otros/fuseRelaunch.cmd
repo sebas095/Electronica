@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Xilinx/14.7/Contador/latch_d_tb_isim_beh.exe" -prj "C:/Xilinx/14.7/Contador/latch_d_tb_beh.prj" "work.latch_d_tb" 

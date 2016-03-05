@@ -1,0 +1,6 @@
+vhdl work "latch_d.vhd"
+vhdl work "ptd.vhd"
+vhdl work "cont_09.vhd"
+vhdl work "siete_seg.vhd"
+vhdl work "principal.vhd"
+vhdl work "Salida_7Seg.vhd"

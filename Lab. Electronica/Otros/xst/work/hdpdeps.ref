@@ -1,0 +1,75 @@
+V3 56
+FL /opt/Xilinx/14.7/Contador/cont_09.vhd 2015/05/16.23:06:09 P.20131013
+FL /opt/Xilinx/14.7/Contador/latch_d.vhd 2015/05/17.20:50:04 P.20131013
+FL /opt/Xilinx/14.7/Contador/principal.vhd 2015/05/16.23:28:58 P.20131013
+FL /opt/Xilinx/14.7/Contador/ptd.vhd 2015/05/16.18:28:52 P.20131013
+FL /opt/Xilinx/14.7/Contador/Salida_7Seg.vhd 2015/05/18.09:59:19 P.20131013
+FL /opt/Xilinx/14.7/Contador/siete_seg.vhd 2015/05/17.10:25:07 P.20131013
+FL C:/Xilinx/14.7/Contador/Act_disp.vhd 2015/05/21.23:04:05 P.20131013
+EN work/Act_disp 1432298064 FL C:/Xilinx/14.7/Contador/Act_disp.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Act_disp/Actualizador 1432298065 \
+      FL C:/Xilinx/14.7/Contador/Act_disp.vhd EN work/Act_disp 1432298064
+FL C:/Xilinx/14.7/Contador/cont_09.vhd 2015/05/21.23:19:58 P.20131013
+EN work/cont_09 1432298056 FL C:/Xilinx/14.7/Contador/cont_09.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/cont_09/Arq_cont_09 1432298057 \
+      FL C:/Xilinx/14.7/Contador/cont_09.vhd EN work/cont_09 1432298056 CP latch_d
+FL C:/Xilinx/14.7/Contador/Cont_digit.vhd 2015/05/22.00:01:33 P.20131013
+EN work/Cont_digit 1432298062 FL C:/Xilinx/14.7/Contador/Cont_digit.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/Cont_digit/Behavioral 1432298063 \
+      FL C:/Xilinx/14.7/Contador/Cont_digit.vhd EN work/Cont_digit 1432298062 \
+      CP Vel_cont CP principal
+FL C:/Xilinx/14.7/Contador/latch_d.vhd 2015/05/21.23:11:04 P.20131013
+EN work/latch_d 1432298052 FL C:/Xilinx/14.7/Contador/latch_d.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/latch_d/Arq_latch_d 1432298053 \
+      FL C:/Xilinx/14.7/Contador/latch_d.vhd EN work/latch_d 1432298052
+FL C:/Xilinx/14.7/Contador/Maquina_est.vhd 2015/05/22.06:53:05 P.20131013
+EN work/Maquina_est 1432298066 FL C:/Xilinx/14.7/Contador/Maquina_est.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/Maquina_est/Behavioral 1432298067 \
+      FL C:/Xilinx/14.7/Contador/Maquina_est.vhd EN work/Maquina_est 1432298066
+FL C:/Xilinx/14.7/Contador/Master.vhd 2015/05/22.00:21:19 P.20131013
+EN work/Master 1432298072 FL C:/Xilinx/14.7/Contador/Master.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/Master/Arq_Master 1432298073 \
+      FL C:/Xilinx/14.7/Contador/Master.vhd EN work/Master 1432298072 \
+      CP Cont_digit CP Act_disp CP Maquina_est CP Mult CP mod_display
+FL C:/Xilinx/14.7/Contador/mod_display.vhd 2015/05/22.00:16:47 P.20131013
+EN work/mod_display 1432298070 FL C:/Xilinx/14.7/Contador/mod_display.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/mod_display/Behavioral 1432298071 \
+      FL C:/Xilinx/14.7/Contador/mod_display.vhd EN work/mod_display 1432298070
+FL C:/Xilinx/14.7/Contador/Mult.vhd 2015/05/22.06:51:33 P.20131013
+EN work/Mult 1432298068 FL C:/Xilinx/14.7/Contador/Mult.vhd PB ieee/std_logic_1164 1381692176
+AR work/Mult/Behavioral 1432298069 \
+      FL C:/Xilinx/14.7/Contador/Mult.vhd EN work/Mult 1432298068
+FL C:/Xilinx/14.7/Contador/principal.vhd 2015/05/21.23:31:25 P.20131013
+EN work/principal 1432298060 FL C:/Xilinx/14.7/Contador/principal.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/principal/Arq_principal 1432298061 \
+      FL C:/Xilinx/14.7/Contador/principal.vhd EN work/principal 1432298060 CP ptd \
+      CP cont_09
+FL C:/Xilinx/14.7/Contador/ptd.vhd 2015/05/16.18:28:52 P.20131013
+EN work/ptd 1432298054 FL C:/Xilinx/14.7/Contador/ptd.vhd PB ieee/std_logic_1164 1381692176
+AR work/ptd/Arq_ptd 1432298055 \
+      FL C:/Xilinx/14.7/Contador/ptd.vhd EN work/ptd 1432298054
+FL C:/Xilinx/14.7/Contador/Salida_7Seg.vhd 2015/05/18.09:59:19 P.20131013
+EN work/Salida_7Seg 1432135642 FL C:/Xilinx/14.7/Contador/Salida_7Seg.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/Salida_7Seg/Arq_Salida_7Seg 1432135643 \
+      FL C:/Xilinx/14.7/Contador/Salida_7Seg.vhd EN work/Salida_7Seg 1432135642 \
+      CP principal CP siete_seg
+FL C:/Xilinx/14.7/Contador/siete_seg.vhd 2015/05/17.10:25:07 P.20131013
+EN work/siete_seg 1432135640 FL C:/Xilinx/14.7/Contador/siete_seg.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/siete_seg/Arq_siete_seg 1432135641 \
+      FL C:/Xilinx/14.7/Contador/siete_seg.vhd EN work/siete_seg 1432135640
+FL C:/Xilinx/14.7/Contador/Vel_cont.vhd 2015/05/21.23:51:04 P.20131013
+EN work/Vel_cont 1432298058 FL C:/Xilinx/14.7/Contador/Vel_cont.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Vel_cont/velocidad 1432298059 \
+      FL C:/Xilinx/14.7/Contador/Vel_cont.vhd EN work/Vel_cont 1432298058

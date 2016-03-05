@@ -1,0 +1,40 @@
+xst -intstyle ise -ifn "C:/Xilinx/14.7/Contador/Master.xst" -ofn "C:/Xilinx/14.7/Contador/Master.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/14.7/Contador/Master.xst" -ofn "C:/Xilinx/14.7/Contador/Master.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/14.7/Contador/Master.xst" -ofn "C:/Xilinx/14.7/Contador/Master.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/14.7/Contador/Master.xst" -ofn "C:/Xilinx/14.7/Contador/Master.syr" 
+netgen -intstyle ise -ar Structure -tm Master -w -dir netgen/synthesis -ofmt vhdl -sim Master.ngc Master_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-4 Master.ngc Master.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Master_map.ncd Master.ngd Master.pcf 
+par -w -intstyle ise -ol high -t 1 Master_map.ncd Master.ncd Master.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Master.twx Master.ncd -o Master.twr Master.pcf 
+xst -intstyle ise -ifn "C:/Xilinx/14.7/Contador/Master.xst" -ofn "C:/Xilinx/14.7/Contador/Master.syr" 
+netgen -intstyle ise -ar Structure -tm Master -w -dir netgen/synthesis -ofmt vhdl -sim Master.ngc Master_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-4 Master.ngc Master.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Master_map.ncd Master.ngd Master.pcf 
+par -w -intstyle ise -ol high -t 1 Master_map.ncd Master.ncd Master.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Master.twx Master.ncd -o Master.twr Master.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Master.ucf -p xc3s100e-cp132-4 Master.ngc Master.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Master_map.ncd Master.ngd Master.pcf 
+par -w -intstyle ise -ol high -t 1 Master_map.ncd Master.ncd Master.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Master.twx Master.ncd -o Master.twr Master.pcf -ucf Master.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Master.ucf -p xc3s100e-cp132-4 Master.ngc Master.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Master_map.ncd Master.ngd Master.pcf 
+par -w -intstyle ise -ol high -t 1 Master_map.ncd Master.ncd Master.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Master.twx Master.ncd -o Master.twr Master.pcf -ucf Master.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Master.ucf -p xc3s100e-cp132-4 Master.ngc Master.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Master_map.ncd Master.ngd Master.pcf 
+par -w -intstyle ise -ol high -t 1 Master_map.ncd Master.ncd Master.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Master.twx Master.ncd -o Master.twr Master.pcf -ucf Master.ucf 
+netgen -intstyle ise -ar Structure -tm Master -w -dir netgen/synthesis -ofmt vhdl -sim Master.ngc Master_synthesis.vhd 
+xst -intstyle ise -ifn "C:/Xilinx/14.7/Contador/Master.xst" -ofn "C:/Xilinx/14.7/Contador/Master.syr" 
+netgen -intstyle ise -ar Structure -tm Master -w -dir netgen/synthesis -ofmt vhdl -sim Master.ngc Master_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Master.ucf -p xc3s100e-cp132-4 Master.ngc Master.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Master_map.ncd Master.ngd Master.pcf 
+par -w -intstyle ise -ol high -t 1 Master_map.ncd Master.ncd Master.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Master.twx Master.ncd -o Master.twr Master.pcf -ucf Master.ucf 
+xst -intstyle ise -ifn "C:/Xilinx/14.7/Contador/Master.xst" -ofn "C:/Xilinx/14.7/Contador/Master.syr" 
+netgen -intstyle ise -ar Structure -tm Master -w -dir netgen/synthesis -ofmt vhdl -sim Master.ngc Master_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Master.ucf -p xc3s100e-cp132-4 Master.ngc Master.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Master_map.ncd Master.ngd Master.pcf 
+par -w -intstyle ise -ol high -t 1 Master_map.ncd Master.ncd Master.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Master.twx Master.ncd -o Master.twr Master.pcf -ucf Master.ucf 

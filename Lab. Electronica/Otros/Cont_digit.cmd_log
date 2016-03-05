@@ -1,0 +1,9 @@
+xst -intstyle ise -ifn "C:/Xilinx/14.7/Contador/Cont_digit.xst" -ofn "C:/Xilinx/14.7/Contador/Cont_digit.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/14.7/Contador/Cont_digit.xst" -ofn "C:/Xilinx/14.7/Contador/Cont_digit.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/14.7/Contador/Cont_digit.xst" -ofn "C:/Xilinx/14.7/Contador/Cont_digit.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/14.7/Contador/Cont_digit.xst" -ofn "C:/Xilinx/14.7/Contador/Cont_digit.syr" 
+netgen -intstyle ise -ar Structure -tm Cont_digit -w -dir netgen/synthesis -ofmt vhdl -sim Cont_digit.ngc Cont_digit_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-4 Cont_digit.ngc Cont_digit.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Cont_digit_map.ncd Cont_digit.ngd Cont_digit.pcf 
+par -w -intstyle ise -ol high -t 1 Cont_digit_map.ncd Cont_digit.ncd Cont_digit.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Cont_digit.twx Cont_digit.ncd -o Cont_digit.twr Cont_digit.pcf 

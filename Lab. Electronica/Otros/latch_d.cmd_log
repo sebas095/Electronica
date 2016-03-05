@@ -1,0 +1,10 @@
+vhdtdtfi -prj Contador -o /opt/Xilinx/14.7/Contador/latch_d.vhi -module latch_d -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work latch_d.vhd 
+xst -intstyle ise -ifn "C:/Xilinx/14.7/Contador/latch_d.xst" -ofn "C:/Xilinx/14.7/Contador/latch_d.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 latch_d.ngc latch_d.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o latch_d_map.ncd latch_d.ngd latch_d.pcf 
+par -w -intstyle ise -ol high -t 1 latch_d_map.ncd latch_d.ncd latch_d.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml latch_d.twx latch_d.ncd -o latch_d.twr latch_d.pcf 
+netgen -intstyle ise -ar Structure -tm latch_d -w -dir netgen/synthesis -ofmt vhdl -sim latch_d.ngc latch_d_synthesis.vhd 
+vhdtdtfi -lib work latch_d.vhd -prj Contador -o latch_d.spl -module latch_d -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e latch_d.spl C:/Xilinx/14.7/Contador/latch_d.sym 
+xst -intstyle ise -ifn "C:/Xilinx/14.7/Contador/latch_d.xst" -ofn "C:/Xilinx/14.7/Contador/latch_d.syr" 
